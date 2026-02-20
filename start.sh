@@ -36,7 +36,7 @@ cd ..
 sleep 2
 
 # Start frontend
-echo "[FRONTEND] Launching client on port 3000..."
+echo "[FRONTEND] Launching client on port 5173..."
 cd frontend && npm run dev
 
 # Cleanup on exit

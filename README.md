@@ -59,7 +59,7 @@ shared/          → Config, DI container
 ### Endpoints
 
 - **Backend**: `http://localhost:3001/stream`
-- **Frontend**: `http://localhost:3000`
+- **Frontend**: `http://localhost:5173`
 
 ---
 

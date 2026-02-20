@@ -43,7 +43,7 @@ $backendJob = Start-Job -ScriptBlock {
 Start-Sleep -Seconds 2
 
 # Start frontend
-Write-Host "[FRONTEND] Launching client on port 3000..." -ForegroundColor Cyan
+Write-Host "[FRONTEND] Launching client on port 5173..." -ForegroundColor Cyan
 Set-Location frontend
 npm run dev
 
