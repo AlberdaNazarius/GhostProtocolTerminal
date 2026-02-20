@@ -1,9 +1,15 @@
 import { Hono } from 'hono'
+import { cors } from 'hono/cors'
+import routes from './routes'
+import { SERVER_CONFIG } from './config/constants'
 
 const app = new Hono()
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
+app.use('/*', cors())
+app.route('/', routes)
 
-export default app
+const port = SERVER_CONFIG.port
+Bun.serve({
+  port,
+  fetch: app.fetch,
+})
